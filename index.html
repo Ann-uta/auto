@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости авто</title>
+    <link rel="stylesheet" href="auto.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Калькулятор стоимости автомобиля</h2>
+        <form>
+            <div>Марка машины
+                <select name="brand" id="brand">
+                    <option value="0">Audi</option>
+                    <option value="1">BMW</option>
+                    <option value="2">Ford</option>
+                </select></div><br />
+            <div>Год выпуска
+                <select name="year" id="year">
+                    <option value="0">2018</option>
+                    <option value="1">2019</option>
+                    <option value="2">2020</option>
+                </select></div><br />
+            <div>
+                <label>Тип Топлива</label><br />
+                <input type="radio" id="petrol" name="fuel" value="300000" required> Бензин
+                <input type="radio" id="diesel" name="fuel" value="0" required> Дизель
+            </div><br />
+            <div>
+                <label><input type="checkbox" name="transmission" value="300000"> АКПП</label>
+            </div>
+            <button class="button">Рассчитать</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <script src="auto.js"></script>
+</body>
+
+</html>
